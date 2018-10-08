@@ -12,10 +12,9 @@ La técnica para trucar ésta red es similar a la técnica que se usa para entre
 - Estas dos técnicas lo que hace es pedirle a la red neuronal que, teniendo los datos de entrada y salida, responda a ¿Cuáles son los valores internos de nuestros parámetros para que el **error** en que se incurre al predecir un resultado sea el **mínimo**?
 - Igualmente con éstas técnicas de optimización podremos realizar el **Ataque Adversario** simplemente cambiando la pregunta en un modelo pre-entrenado: ¿Cuál es el **máximo error** que podemos obtener al manipular los pixeles de la imágen?
 En este caso contamos con un modelo cuyos parámetros ya están ajustados para que funcionen bien;  por ejemplo, clasificador de imágenes. Lo que buscamos no es reajustar los parámetros de entrada (podríamos dañarlo) sino modificar los píxeles de la imagen de entrada que serán nuestros parámetros de optimización. Esto es lo que se conoce como Ataques Adversarios.
-- Con el fin de que la imagen no sea facilmente detectada por un humano adicionamos otra pregunta y es: ¿Cuál es el máximo error que podremos obtener modificando los pixeles de una imagen de entrada pero que la diferencia entre la imagen original y la perturbada sea mínima?
+- Con el fin de que la imagen no sea facilmente detectada por un humano adicionamos otra pregunta y es: **¿Cuál es el máximo error que podremos obtener modificando los pixeles de una imagen de entrada pero que la diferencia entre la imagen original y la perturbada sea mínima?**
 
-                'REAJUSTAR INPUT ---> MAXIMIMAR ERROR + MINIMIZAR PERTURBACIÓN'
-                
+               REAJUSTAR INPUT ---> MAXIMIXAR ERROR + MINIMIZAR PERTURBACIÓN                
 
-Es de resaltar que para poder engañar nuestro modelo, no es necesario tener acceso a su funcionamiento interno. Simplemente con el hecho de tener un clasificador de imágenes, perturbar una imagen e ir testeando lo prodremos hacer. Lo más impresionante aún es que éstos ataques pueden ser transferidos entre modelos. Por lo que puedo entrenar en cualquier modelo y luego probarlo en otro y hackearlo.
+Es de resaltar que para poder engañar nuestro modelo, no es necesario tener acceso a su funcionamiento interno. Simplemente con el hecho de tener un clasificador de imágenes, perturbar una imagen e ir testeando lo prodremos hacer. Lo más impresionante aún es que **éstos ataques pueden ser transferidos entre modelos**. Por lo que puedo entrenar en cualquier modelo y luego probarlo en otro y hackearlo.
 
