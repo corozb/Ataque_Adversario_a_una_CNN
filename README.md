@@ -4,7 +4,7 @@ Una Convolutional Neuronal Network (CNN) se usa para el procesamiento de imágen
 
 Un Ataque Adversario es una técnica que usa para engañar **(hackear)** una red neuronal y da un resultado completamente diferente al que se visualiza en la imágen. Por ejemplo, le presentamos una imagen de un edificio y nos dirá que es un perro. En algunos casos podrá reemplazar la indentidad de una persona o para los coches de conducción autónoma podrá confundir señales de tránsito. Ésto se explica a que el output de una red neuronal se expresa como una propobabilidad y la imagen modificada ofrece una certeza de resultado mucho mayor que las otras imágenes por lo que la red optar por la más alta. 
 
-Vamos a trucar entonces el sistema de la Red Neuronal **Inception_V3**, el cual es una dataset de imagenes entrenado sobreque el dataset **ImageNet**. Este dataset es diseñado por Google y puede clasificar imagenes en 1000 categorías diferentes, lo cual es un buen rendimiento. 
+Vamos a trucar entonces el sistema de la Red Neuronal **Inception_V3**, el cual es una dataset de imagenes entrenado sobre el dataset **ImageNet**. Este dataset es diseñado por Google y puede clasificar imagenes en 1000 categorías diferentes, lo cual es un buen rendimiento. 
 
 La técnica para trucar ésta red es similar a la técnica que se usa para entrenarla. Cuando se trabaja con una red neuronal la forma de entrenarla es a través de la modificación de sus parámetros:
 - Tenemos unos datos de entrada y unos de salida en los cuales queremos que se encuentren una relación, esa relación viene definida en cómo están ajustados los parámetros.
